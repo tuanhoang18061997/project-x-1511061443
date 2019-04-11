@@ -1,4 +1,10 @@
+
 <html>
+    <head>
+       <link rel="stylesheet" type="text/css" href="./Content/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    
+
+</head>
   <script>
     
     var inputIdFirst = "valueOfX",inputIdSecond = "valueOfY",outputId = "resultHere";
@@ -33,13 +39,15 @@
 </head>
 <body>
       Enter first number
-      <input type="number" id="valueOfX">
+      <input class="form-control" style="width: 100px;" type="number" id="valueOfX">
       Enter second number
-      <input type="number" id="valueOfY">
-      <button onclick="operation('add')"> + </button>
-      <button onclick="operation('sub')"> - </button>
-      <button onclick="operation('mul')"> * </button>
-      <button onclick="operation('div')"> / </button>
+      <input class="form-control" style="width: 100px;" type="number" id="valueOfY">
+      <hr/>
+      <button class="btn btn-success" onclick="operation('add')"> + </button>
+      <button class="btn btn-primary" onclick="operation('sub')"> - </button>
+      <button class="btn btn-warning" onclick="operation('mul')"> * </button>
+      <button class="btn btn-info" onclick="operation('div')"> / </button>
       <h1 id="resultHere">Kết quả: </h1>
 </body>
+<script src="./Content/bootstrap-4.3.1-dist/bootstrap.min.js"></script>
 </html>
